@@ -29,6 +29,7 @@ Landing page profesional y catálogo interactivo para "Bodegas del Sur", una emp
 ---
 
 ## 🧱 Estructura del Proyecto
+```
 Frontend/
 ├── public/                         # Archivos públicos
 │   └── favicon.ico
@@ -55,6 +56,7 @@ Frontend/
 ├── vite.config.ts                 # Configuración de Vite
 ├── package.json
 └── README.md
+```
 ---
 
 ## 🧩 Páginas Incluidas
