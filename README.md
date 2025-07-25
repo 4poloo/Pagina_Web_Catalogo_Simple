@@ -1,69 +1,87 @@
-# React + TypeScript + Vite
+# 🏢 Bodegas del Sur - Landing Page & Catálogo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page profesional y catálogo interactivo para "Bodegas del Sur", una empresa dedicada al arriendo de espacios industriales y logísticos. Desarrollado en React + Vite + TypeScript con animaciones y estilos modernos.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías Utilizadas
 
-## Expanding the ESLint configuration
+- ⚛️ **React 18** con **Vite** como bundler
+- 🎨 **TailwindCSS** para estilos rápidos y responsivos
+- 💡 **TypeScript** para tipado estático y robustez
+- 🎞️ **Framer Motion** para animaciones suaves
+- 🌐 **React Router** (opcional para navegación entre páginas)
+- 🖼️ Carga de imágenes con `import` (modo local)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🧱 Estructura del Proyecto
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Frontend/
+├── public/
+├── src/
+│ ├── components/
+│ │ └── Header.tsx, Footer.tsx, etc.
+│ ├── pages/
+│ │ └── Landing.tsx, Catalogo.tsx, Contacto.tsx
+│ ├── images/
+│ │ └── b1a.jpg, b1b.jpg, ...
+│ ├── App.tsx
+│ └── main.tsx
+├── tailwind.config.js
+├── tsconfig.json
+└── vite.config.ts
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧩 Páginas Incluidas
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 📌 Landing Page (`/`)
+- Hero con fondo dinámico e imagen difuminada
+- Secciones informativas con animaciones al hacer scroll
+- Botón flotante de WhatsApp
+
+### 📦 Catálogo (`/catalogo`)
+- Tarjetas de bodegas con imágenes scrollables (drag horizontal)
+- Zoom animado al pasar el mouse
+- Información de medidas y ubicación
+
+### 📬 Contacto (`/contacto`)
+- Mapa horizontal
+- Formulario de contacto
+- Datos mock de la empresa + botón de WhatsApp
+
+---
+
+🧪 TODOs / Funcionalidades futuras
+
+    Integración con backend para formularios reales
+
+    Validación con Firebase u otro proveedor
+
+    Subida dinámica de bodegas desde API
+
+    SEO básico y favicon personalizado
+
+    Deploy en Vercel / Netlify / Render
+
+🧾 Datos de ejemplo (mock)
+
+    Dirección: Av. Empresarial 1234, Quilicura, Santiago
+
+    Teléfono: +56 9 1234 5678
+
+    Correo: contacto@bodegasdelsur.cl
+
+    Horario: Lunes a Viernes de 9:00 a 18:00
+    
+🧑‍💻 Autor
+
+Max Dev
+Desarrollador Fullstack 
+---
+
+📄 Licencia
+
+Este proyecto está bajo licencia MIT.
