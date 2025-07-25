@@ -29,31 +29,30 @@ Landing page profesional y catálogo interactivo para "Bodegas del Sur", una emp
 ---
 
 ## 🧱 Estructura del Proyecto
-
 Frontend/
-├── public/ # Archivos públicos
-│ └── favicon.ico
+├── public/                         # Archivos públicos
+│   └── favicon.ico
 ├── src/
-│ ├── assets/ # Imágenes y recursos
-│ │ └── logo.svg, imágenes bodegas
+│   ├── assets/                     # Imágenes y recursos
+│   │   └── logo.svg, imágenes bodegas
 │
-│ ├── components/ # Componentes reutilizables
-│ │ ├── Header.tsx # Header modular
-│ │ ├── Footer.tsx # Footer modular
-│ │ └── WhatsAppButton.tsx # Botón fijo de WhatsApp
+│   ├── components/                 # Componentes reutilizables
+│   │   ├── Header.tsx             # Header modular
+│   │   ├── Footer.tsx             # Footer modular
+│   │   └── WhatsAppButton.tsx     # Botón fijo de WhatsApp
 │
-│ ├── pages/ # Páginas del sitio
-│ │ ├── Landing.tsx # Página principal
-│ │ ├── Catalogo.tsx # Página de bodegas
-│ │ └── Contacto.tsx # Página de contacto
+│   ├── pages/                      # Páginas del sitio
+│   │   ├── Landing.tsx            # Página principal
+│   │   ├── Catalogo.tsx           # Página de bodegas
+│   │   └── Contacto.tsx           # Página de contacto
 │
-│ ├── App.tsx # Enrutador principal
-│ ├── main.tsx # Punto de entrada
-│ └── index.css # Tailwind y estilos base
+│   ├── App.tsx                    # Enrutador principal
+│   ├── main.tsx                   # Punto de entrada
+│   └── index.css                  # Tailwind y estilos base
 │
-├── tailwind.config.ts # Configuración extendida de Tailwind
-├── tsconfig.json # Configuración TypeScript
-├── vite.config.ts # Configuración de Vite
+├── tailwind.config.ts             # Configuración extendida de Tailwind
+├── tsconfig.json                  # Configuración TypeScript
+├── vite.config.ts                 # Configuración de Vite
 ├── package.json
 └── README.md
 ---
