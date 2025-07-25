@@ -14,25 +14,48 @@ Landing page profesional y catálogo interactivo para "Bodegas del Sur", una emp
 - 🖼️ Carga de imágenes con `import` (modo local)
 
 ---
+## 📦 Tecnologías y Versiones
+
+| Herramienta        | Versión     |
+|--------------------|-------------|
+| React              | 18.x        |
+| Vite               | ^4.0 / ^5.0 |
+| TypeScript         | ^5.x        |
+| TailwindCSS        | ^4.1        |
+| Framer Motion      | ^10.x       |
+| PostCSS            | ^8.x        |
+| Autoprefixer       | ^10.x       |
+
+---
 
 ## 🧱 Estructura del Proyecto
 
 Frontend/
-├── public/
+├── public/ # Archivos públicos
+│ └── favicon.ico
 ├── src/
-│ ├── components/
-│ │ └── Header.tsx, Footer.tsx, etc.
-│ ├── pages/
-│ │ └── Landing.tsx, Catalogo.tsx, Contacto.tsx
-│ ├── images/
-│ │ └── b1a.jpg, b1b.jpg, ...
-│ ├── App.tsx
-│ └── main.tsx
-├── tailwind.config.js
-├── tsconfig.json
-└── vite.config.ts
-
-
+│ ├── assets/ # Imágenes y recursos
+│ │ └── logo.svg, imágenes bodegas
+│
+│ ├── components/ # Componentes reutilizables
+│ │ ├── Header.tsx # Header modular
+│ │ ├── Footer.tsx # Footer modular
+│ │ └── WhatsAppButton.tsx # Botón fijo de WhatsApp
+│
+│ ├── pages/ # Páginas del sitio
+│ │ ├── Landing.tsx # Página principal
+│ │ ├── Catalogo.tsx # Página de bodegas
+│ │ └── Contacto.tsx # Página de contacto
+│
+│ ├── App.tsx # Enrutador principal
+│ ├── main.tsx # Punto de entrada
+│ └── index.css # Tailwind y estilos base
+│
+├── tailwind.config.ts # Configuración extendida de Tailwind
+├── tsconfig.json # Configuración TypeScript
+├── vite.config.ts # Configuración de Vite
+├── package.json
+└── README.md
 ---
 
 ## 🧩 Páginas Incluidas
